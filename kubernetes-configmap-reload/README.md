@@ -23,7 +23,8 @@ Pre-requisites[ TAKE AMAZON LINUX2 SYSTEM t2.micro]:
     - Install Jenkins
     
       sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-      sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org
+     #This is old way ---> sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org
+     # New Command sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
       sudo yum install jenkins -y 
       sudo systemctl start jenkins
     
